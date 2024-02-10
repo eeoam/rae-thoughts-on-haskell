@@ -1,0 +1,34 @@
+
+name: rae
+description: Code for rae's thoughts on Haskell
+
+language: GHC2021
+
+default-extensions:
+  - DataKinds
+  - DeriveAnyClass
+  - DerivingStrategies
+  - LambdaCase
+  - NoStarIsType
+  - TypeFamilies
+  - DefaultSignatures
+  - UndecidableInstances
+
+dependencies:
+  - base
+  - large-anon
+  - finite-typelits
+  - ghc-typelits-knownnat
+  - ghc-typelits-natnormalise
+  - random
+  - statistics
+  - download
+
+library:
+   source-dirs: src
+   ghc-options: 
+     - -fplugin=Data.Record.Anon.Plugin 
+     - -fplugin=GHC.TypeLits.KnownNat.Solver
+     - -fplugin=GHC.TypeLits.Normalise
+
+
