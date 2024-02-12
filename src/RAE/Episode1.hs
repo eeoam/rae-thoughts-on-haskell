@@ -1,3 +1,5 @@
+--https://www.youtube.com/watch?v=FFZXWoqviBo&list=PLyzwHTVJlRc9QcF_tdqc9RdxJED8Mvyh1&index=2&pp=iAQB
+
 {-# LANGUAGE AllowAmbiguousTypes #-}
 
 module RAE.Episode1 where
