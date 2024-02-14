@@ -7,5 +7,7 @@ import Data.Kind
 class C a where
     data CD k (a :: k) :: k -> *
 
+{- does not compile
 instance C (Maybe a) where
     data CD k (a :: k -> *) :: (k -> *) -> *
+-}
