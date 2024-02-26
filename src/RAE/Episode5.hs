@@ -22,4 +22,6 @@ instance int ~ Int => IsInt int
 f :: forall a b c int. (Show a, Show b, Show c, Cover int a, Cover int b, Cover int c, IsInt int) => String
 f = show (undefined :: c)
 
+{- doesn't compile with this
 x = f @A @B
+-}
