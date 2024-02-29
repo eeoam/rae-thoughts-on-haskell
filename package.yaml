@@ -6,7 +6,7 @@ language: GHC2021
 
 default-extensions:
   - DataKinds
-  - DeriveAnyClass
+  #- DeriveAnyClass
   - DerivingStrategies
   - LambdaCase
   #- NoStarIsType
